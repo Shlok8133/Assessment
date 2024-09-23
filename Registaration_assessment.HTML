@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Registaration_assessment.CSS">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="registrationForm" action="">
+
+        <table cellpadding="5px" cellspacing="10px">
+            <tr>
+                <td>
+                    FIRST NAME <label for="first name"></label>
+                    <input type="text" id="firstName" placeholder="ENTER YOUR FIRST NAME" minlength="3" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    LAST NAME <label for="last name"></label>
+                    <input type="text" id="lastName" placeholder="ENTER YOUR LAST NAME" minlength="3" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    EMAIL ID <label for="email"></label>
+                    <input type="text" id="email" placeholder="it should contain @..">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MOBILE NUMBER <label for="mobile"></label>
+                    <input type="text" id="mobile" placeholder="Only 10 digits are allowed" maxlength="10">
+                </td>
+            </tr>
+            <td>
+                GENDER : <label for="GENDRE"></label>
+                MALE <input type="radio" name="ABC" id="">
+                FEMALE <input type="radio" name="ABC" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                DATE OF BIRTH<label for="date of birth"></label>
+                <input type="datetime-local" name="" id="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ADDRESS <label for="ADDRESS"></label>
+                <TExtarea rows="5" name="" id="" placeholder="ENTER YOUR ADDRESS"></TExtarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CITY <label for="CITY"></label>
+                <input type="text" name="" id="" placeholder="ENTER YOUR CITY NAME">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                AREA PIN CODE <label for="AREA PIN CODE "></label>
+                <input type="text" name="" id="" placeholder="ENTER YOUR AREA PIN CODE" maxlength="6">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                STATE <label for="STATE"></label>
+                <input type="text" name="" id="" placeholder="ENTER YOUR STATE NAME">
+            </td>
+        </tr>
+        <tr>
+            <td>Qualification:</td>
+            <td>
+                <select id="qualification" name="qualification">
+                    <option value="">Select Qualification</option>
+                    <option value="bachelors">Bachelors</option>
+                    <option value="masters">Masters</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Specialization:</td>
+            <td><input type="checkbox" name="" id=""> Comuter Scince <br>
+                <input type="checkbox" name="" id=""> Information Teqnologey <br>
+                <input type="checkbox" name="" id="">Computer Arechitecture <br>
+                <input type="checkbox" name="" id=""> Tele Communication
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="" id="" placeholder="ENTER YOUR PASSWORD" minlength="3" maxlength="10"></td>
+        </tr>
+            <!-- More fields can be added similarly -->
+
+        </table>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Popup Message and Overlay -->
+    <div class="overlay"></div>
+    <div class="popup" id="popupMessage">
+        <h2>Form Validation Errors</h2>
+        <p id="popupText"></p>
+        <button id="closePopup">Close</button>
+    </div>
+</body>
+<script src="Registaration_assessment.js"></script>
+</html>
